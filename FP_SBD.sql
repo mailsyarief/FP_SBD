@@ -178,7 +178,7 @@ INSERT INTO DETIL_KARYAWAN VALUES ('8', 'K1001');
 INSERT INTO DETIL_KARYAWAN VALUES ('8', 'K2001');
 INSERT INTO DETIL_KARYAWAN VALUES ('8', 'K3001');
 
-INSERT INTO NOTA VALUES ('9', 'M0007', '25/FEB/2018', '28/FEB/2018', '29/FEB/2018', 'R01', '10000');
+INSERT INTO NOTA VALUES ('9', 'M0007', '25/FEB/2018', '28/FEB/2018', '28/FEB/2018', 'R01', '10000');
 INSERT INTO DETIL_NOTA VALUES ('9', 'J02', 'pakai air panas', '10', '15');
 INSERT INTO DETIL_KARYAWAN VALUES ('9', 'K1001');
 INSERT INTO DETIL_KARYAWAN VALUES ('9', 'K2001');
@@ -297,3 +297,30 @@ where m.m_no = n.m_no and n.n_no = dn.n_no and dn.j_id = jl.j_id
 group by n.n_no) z
 where m.m_no = n.m_no and n.n_no = dk.N_NO and dk.k_kode = k.k_kode and n.n_no = dn.n_no and dn.j_id = jl.j_id and n.N_NO = z.n_no
 order by n.n_no;
+
+-- laporan member yg melakukan transaksi lebih dari 100RB--
+select distinct m.m_no as no_Member, m.m_nama as nama, n.n_no as no_nota, z.jumlah
+from member_table m, nota n, detil_nota dn, detil_karyawan dk, karyawan k, jenis_layanan jl, (select n.n_no as n_no, sum(jl.j_harga*dn.dn_kuantitas) as jumlah
+from member_table m, nota n, detil_nota dn, jenis_layanan jl
+where m.m_no = n.m_no and n.n_no = dn.n_no and dn.j_id = jl.j_id
+group by n.n_no) z
+where m.m_no = n.m_no and n.n_no = dk.N_NO and dk.k_kode = k.k_kode and n.n_no = dn.n_no and dn.j_id = jl.j_id and n.N_NO = z.n_no and z.jumlah>100000;
+
+-- laporan layanan yg paling laris --
+select jl.j_nama, z.total
+from jenis_layanan jl, (select jl.j_id as j_id, count(jl.j_nama) as total
+from nota n, detil_nota dn, jenis_layanan jl
+where n.n_no = dn.n_no and dn.j_id = jl.j_id
+group by jl.j_id) z
+where jl.j_id = z.j_id
+order by z.total desc;
+
+-- laporan pemasukan per bulan --
+select sum(z.jumlah), EXTRACT(MONTH FROM TO_DATE(n.N_TGLAMBIL, 'DD-MON-RR')) as bulan
+from NOTA n, (select n.n_no as n_no, sum(jl.j_harga*dn.dn_kuantitas) as jumlah
+from member_table m, nota n, detil_nota dn, jenis_layanan jl
+where m.m_no = n.m_no and n.n_no = dn.n_no and dn.j_id = jl.j_id
+group by n.n_no) z
+where n.N_NO = z.n_no
+group by EXTRACT(MONTH FROM TO_DATE(n.N_TGLAMBIL, 'DD-MON-RR'))
+order by EXTRACT(MONTH FROM TO_DATE(n.N_TGLAMBIL, 'DD-MON-RR'));
