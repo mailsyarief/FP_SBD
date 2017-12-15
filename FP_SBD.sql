@@ -286,3 +286,14 @@ INSERT INTO DETIL_KARYAWAN VALUES ('26', 'K1003');
 INSERT INTO DETIL_KARYAWAN VALUES ('26', 'K2002');
 INSERT INTO DETIL_KARYAWAN VALUES ('26', 'K3001');
 --CAPEK--
+
+-- NOTA --
+select m.m_no as no_Member, m.m_nama as nama, m.M_ALAMAT as alamat, m.M_TELP as no_hp, n.n_no as no_nota, n.N_TGLMASUK, n.N_TGLJADI, n.N_TGLAMBIL,
+jl.J_NAMA as pelayanan, dn.DN_KET as ket, dn.DN_KUANTITAS, jl.J_HARGA, (jl.j_harga * dn.dn_kuantitas) as jml,
+(dn.DN_DISKON*z.jumlah/100) as diskon, z.jumlah, n.N_UANGMUKA, (z.jumlah-(n.N_UANGMUKA+(dn.DN_DISKON*z.jumlah/100))) as sisa, k.k_nama, k.K_BAGIAN
+from member_table m, nota n, detil_nota dn, detil_karyawan dk, karyawan k, jenis_layanan jl, (select n.n_no as n_no, sum(jl.j_harga*dn.dn_kuantitas) as jumlah
+from member_table m, nota n, detil_nota dn, jenis_layanan jl
+where m.m_no = n.m_no and n.n_no = dn.n_no and dn.j_id = jl.j_id
+group by n.n_no) z
+where m.m_no = n.m_no and n.n_no = dk.N_NO and dk.k_kode = k.k_kode and n.n_no = dn.n_no and dn.j_id = jl.j_id and n.N_NO = z.n_no
+order by n.n_no;
