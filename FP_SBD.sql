@@ -96,16 +96,16 @@ insert into JENIS_LAYANAN values ('J04', 'Setrika', '3000');
 insert into JENIS_LAYANAN values ('J05', 'Bed Cover', '20000');
 
 -- insert data karyawan --
-insert into KARYAWAN (k_kode, o_id, k_alamat, k_tglmasuk, k_nama, k_bagian) values ('K1101', '1', '66 Gulseth Alley', '7/MAY/2017', 'Chantalle Scola', 'Cuci');
-insert into KARYAWAN (k_kode, o_id, k_alamat, k_tglmasuk, k_nama, k_bagian) values ('K1102', '1', '5946 Anthes Plaza', '24/MAY/2017', 'Kermy Quested', 'Cuci');
-insert into KARYAWAN (k_kode, o_id, k_alamat, k_tglmasuk, k_nama, k_bagian) values ('K1201', '1', '70 Kim Place', '25/MAY/2017', 'Zacherie Bembrigg', 'Setrika');
-insert into KARYAWAN (k_kode, o_id, k_alamat, k_tglmasuk, k_nama, k_bagian) values ('K1202', '1', '154 3rd Parkway', '17/MAY/2017', 'Fern Emblow', 'Setrika');
-insert into KARYAWAN (k_kode, o_id, k_alamat, k_tglmasuk, k_nama, k_bagian) values ('K1301', '1', '7803 Tony Parkway', '19/MAY/2017', 'Kipper Wickerson', 'Operator');
-insert into KARYAWAN (k_kode, o_id, k_alamat, k_tglmasuk, k_nama, k_bagian) values ('K2101', '2', '61616 Red Cloud Pass', '26/MAY/2017', 'Carce Pirouet', 'Cuci');
-insert into KARYAWAN (k_kode, o_id, k_alamat, k_tglmasuk, k_nama, k_bagian) values ('K2102', '2', '53 Namekagon Lane', '14/MAY/2017', 'Mikey Milborn', 'Cuci');
-insert into KARYAWAN (k_kode, o_id, k_alamat, k_tglmasuk, k_nama, k_bagian) values ('K2201', '2', '55 Sugar Avenue', '15/MAY/2017', 'Gussie Davern', 'Setrika');
-insert into KARYAWAN (k_kode, o_id, k_alamat, k_tglmasuk, k_nama, k_bagian) values ('K2202', '2', '168 Hallows Plaza', '16/MAY/2017', 'Armin Atlee', 'Setrika');
-insert into KARYAWAN (k_kode, o_id, k_alamat, k_tglmasuk, k_nama, k_bagian) values ('K2301', '2', '99 Anderson Center', '21/MAY/2017', 'Donal Limpertz', 'Operator');
+insert into KARYAWAN (k_kode, o_id, k_alamat, k_tglmasuk, k_nama, k_bagian) values ('K1101', '1', 'Wisma Permai 1 no.2, Surabaya', '7/MAY/2017', 'Chantalle Scola', 'Cuci');
+insert into KARYAWAN (k_kode, o_id, k_alamat, k_tglmasuk, k_nama, k_bagian) values ('K1102', '1', 'Wisma Permai 2 no.7, Surabaya', '24/MAY/2017', 'Kermy Quested', 'Cuci');
+insert into KARYAWAN (k_kode, o_id, k_alamat, k_tglmasuk, k_nama, k_bagian) values ('K1201', '1', 'Wisma Permai 4 no.5, Surabaya', '25/MAY/2017', 'Zacherie Bembrigg', 'Setrika');
+insert into KARYAWAN (k_kode, o_id, k_alamat, k_tglmasuk, k_nama, k_bagian) values ('K1202', '1', 'Wisma Permai 6 no.1, Surabaya', '17/MAY/2017', 'Fern Emblow', 'Setrika');
+insert into KARYAWAN (k_kode, o_id, k_alamat, k_tglmasuk, k_nama, k_bagian) values ('K1301', '1', 'Wisma Permai 9 no.12, Surabaya', '19/MAY/2017', 'Kipper Wickerson', 'Operator');
+insert into KARYAWAN (k_kode, o_id, k_alamat, k_tglmasuk, k_nama, k_bagian) values ('K2101', '2', 'Kertajaya Indah X/2, Surabaya', '26/MAY/2017', 'Carce Pirouet', 'Cuci');
+insert into KARYAWAN (k_kode, o_id, k_alamat, k_tglmasuk, k_nama, k_bagian) values ('K2102', '2', 'Kertajaya Indah XI/24, Surabaya', '14/MAY/2017', 'Mikey Milborn', 'Cuci');
+insert into KARYAWAN (k_kode, o_id, k_alamat, k_tglmasuk, k_nama, k_bagian) values ('K2201', '2', 'Kertajaya Indah I/6, Surabaya', '15/MAY/2017', 'Gussie Davern', 'Setrika');
+insert into KARYAWAN (k_kode, o_id, k_alamat, k_tglmasuk, k_nama, k_bagian) values ('K2202', '2', 'Kertajaya Indah II/2, Surabaya', '16/MAY/2017', 'Armin Atlee', 'Setrika');
+insert into KARYAWAN (k_kode, o_id, k_alamat, k_tglmasuk, k_nama, k_bagian) values ('K2301', '2', 'Kertajaya Indah XI/1, Surabaya', '21/MAY/2017', 'Donal Limpertz', 'Operator');
 
 --INSERT MEMBER--
 insert into MEMBER_TABLE values ('M0001', 'Paige Lewty', '6/June/1995', 'Keputih Gg.1A no.7, Surabaya', '085521898458', 'L', '7/JUN/2017');
