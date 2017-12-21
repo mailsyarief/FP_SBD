@@ -118,16 +118,16 @@ insert into MEMBER_TABLE values ('M0007', 'Far Breadmore', '11/June/1995', 'Kepu
 insert into MEMBER_TABLE values ('M0008', 'Minor Frissell', '6/Aug/1995', 'Perumdos Blok U no.34, Surabaya', '083696878628', 'L', '6/JUN/2017');
 insert into MEMBER_TABLE values ('M0009', 'Mikaela Baine', '29/Sep/1997', 'Wisma Permai 3 no.8, Mulyorejo, Surabaya', '080708509012', 'P', '13/JUN/2017');
 insert into MEMBER_TABLE values ('M0010', 'Robbin Cawdell', '9/Apr/1995', 'Gebang Lor no.31, Surabaya', '086648707407', 'L', '17/JUN/2017');
-insert into MEMBER_TABLE values ('M0011', 'Currie Jikovsky', '6/June/1998', '9710 Maple Pass', '088022124376', 'L', '11/JUN/2017');
-insert into MEMBER_TABLE values ('M0012', 'Jens Piletic', '11/May/1997', '163 Warbler Circle', '087621861750', 'L', '1/JUN/2017');
-insert into MEMBER_TABLE values ('M0013', 'Vinnie Medlar', '2/July/1996', '7554 Bunting Center', '082826381964', 'P', '30/JUN/2017');
-insert into MEMBER_TABLE values ('M0014', 'Phillipe Rowat', '16/Dec/1997', '44 Delaware Parkway', '081583181019', 'P', '12/JUN/2017');
-insert into MEMBER_TABLE values ('M0015', 'Jared Braksper', '21/Dec/1998', '214 Mandrake Terrace', '088232884501', 'P', '25/JUN/2017');
-insert into MEMBER_TABLE values ('M0016', 'Karleen Wurst', '19/Dec/1995', '2346 Myrtle Parkway', '086858897859', 'L', '27/JUN/2017');
-insert into MEMBER_TABLE values ('M0017', 'Arielle Ducker', '1/May/1994', '8 Stoughton Junction', '080016568864', 'P', '24/JUN/2017');
-insert into MEMBER_TABLE values ('M0018', 'Maddi Winship', '5/Apr/1996', '6 Lyons Trail', '084914728295', 'P', '3/JUN/2017');
-insert into MEMBER_TABLE values ('M0019', 'Skippy Boldecke', '22/Oct/1994', '4126 Prentice Hill', '084340629861', 'L', '8/JUN/2017');
-insert into MEMBER_TABLE values ('M0020', 'Quinlan Sabatini', '10/Jan/1998', '93 Reindahl Pass', '085494025707', 'L', '28/JUN/2017');
+insert into MEMBER_TABLE values ('M0011', 'Currie Jikovsky', '6/June/1998', 'Gebang Lor no.12, Surabaya', '088022124376', 'L', '11/JUN/2017');
+insert into MEMBER_TABLE values ('M0012', 'Jens Piletic', '11/May/1997', 'Keputih Tegal Timur 3 no.29, Surabaya', '087621861750', 'L', '1/JUN/2017');
+insert into MEMBER_TABLE values ('M0013', 'Vinnie Medlar', '2/July/1996', 'Bumi Marina Emas no.1, Surabaya', '082826381964', 'P', '30/JUN/2017');
+insert into MEMBER_TABLE values ('M0014', 'Phillipe Rowat', '16/Dec/1997', 'Perumdos Blok T no.4, Surabaya', '081583181019', 'P', '12/JUN/2017');
+insert into MEMBER_TABLE values ('M0015', 'Jared Braksper', '21/Dec/1998', 'Perumdos Blok U no.24, Surabaya', '088232884501', 'P', '25/JUN/2017');
+insert into MEMBER_TABLE values ('M0016', 'Karleen Wurst', '19/Dec/1995', 'Asrama Mahasiswa ITS Gedung G, Surabaya', '086858897859', 'L', '27/JUN/2017');
+insert into MEMBER_TABLE values ('M0017', 'Arielle Ducker', '1/May/1994', 'Keputih Tegal Timur 2 no.2, Surabaya', 'P', '24/JUN/2017');
+insert into MEMBER_TABLE values ('M0018', 'Maddi Winship', '5/Apr/1996', 'Keputih Tambak no.2, Surabaya', '084914728295', 'P', '3/JUN/2017');
+insert into MEMBER_TABLE values ('M0019', 'Skippy Boldecke', '22/Oct/1994', 'Keputih Tambak no.22, Surabaya', '084340629861', 'L', '8/JUN/2017');
+insert into MEMBER_TABLE values ('M0020', 'Quinlan Sabatini', '10/Jan/1998', 'Keputih Perintis 4 no.2, Surabaya', '085494025707', 'L', '28/JUN/2017');
 
 -- BIKIN ISI NOTA --
 INSERT INTO NOTA VALUES ('1', 'M0001', '11/JUL/2017', '13/JUL/2017', '13/JUL/2017', 'R11', '5000', '10');
